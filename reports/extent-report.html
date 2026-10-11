@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Agentic Test Report</title>
+    <style>
+    body{font-family:Arial,sans-serif;margin:28px;color:#222;background:#f5f7fb}
+    header,table{background:white;border-radius:10px;padding:18px;box-shadow:0 1px 5px #ddd}
+    h1{margin:0 0 8px} .cards{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+    .metric{background:white;padding:18px;border-radius:8px;min-width:100px;box-shadow:0 1px 5px #ddd}
+    .metric strong{display:block;font-size:26px} table{width:100%;border-collapse:collapse;padding:0}
+    th,td{padding:12px;text-align:left;border-bottom:1px solid #eee;vertical-align:top} th{background:#f0f3f8}
+    .pill{padding:5px 9px;border-radius:15px;font-size:12px;font-weight:bold} .pass{background:#d8f5df;color:#17652c}
+    .fail{background:#ffe0e0;color:#9b1c1c} .skip{background:#fff0c2;color:#765500} pre{white-space:pre-wrap;max-width:700px}
+    ul{padding-left:18px;font-size:12px}
+    </style></head><body><header><h1>Agentic E-commerce Test Report</h1>
+    <p>Generated 2026-10-11 11:58:57</p></header>
+    <div class="cards"><div class="metric"><strong>5</strong>Total</div>
+    <div class="metric"><strong>5</strong>Passed</div><div class="metric"><strong>0</strong>Failed</div>
+    <div class="metric"><strong>0</strong>Skipped</div></div>
+    <table><thead><tr><th>Test / Metadata</th><th>Status</th><th>Duration</th><th>Details</th></tr></thead>
+    <tbody>
+        <tr><td>tests/test_agentic_flow.py::test_agentic_shopping_objective<ul><li><b>Planner:</b> Fallback planner used (HTTPError: 404 Client Error: Not Found for url: http://127.0.0.1:11434/api/generate)</li><li><b>Goal:</b> Test a safe local shopping journey: sign in with demo credentials, find Wireless Mouse, add it to the cart, and reach simulated checkout.</li><li><b>Plan:</b> [{&#x27;action&#x27;: &#x27;open_login&#x27;}, {&#x27;action&#x27;: &#x27;login_valid&#x27;}, {&#x27;action&#x27;: &#x27;open_products&#x27;}, {&#x27;action&#x27;: &#x27;search_product&#x27;, &#x27;value&#x27;: &#x27;Wireless Mouse&#x27;}, {&#x27;action&#x27;: &#x27;add_first_result_to_cart&#x27;}, {&#x27;action&#x27;: &#x27;open_cart&#x27;}, {&#x27;action&#x27;: &#x27;proceed_to_checkout&#x27;}, {&#x27;action&#x27;: &#x27;verify_text&#x27;, &#x27;value&#x27;: &#x27;Checkout&#x27;}]</li><li><b>Executed steps:</b> [{&#x27;step&#x27;: 1, &#x27;action&#x27;: &#x27;open_login&#x27;, &#x27;value&#x27;: None, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 2, &#x27;action&#x27;: &#x27;login_valid&#x27;, &#x27;value&#x27;: None, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 3, &#x27;action&#x27;: &#x27;open_products&#x27;, &#x27;value&#x27;: None, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 4, &#x27;action&#x27;: &#x27;search_product&#x27;, &#x27;value&#x27;: &#x27;Wireless Mouse&#x27;, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 5, &#x27;action&#x27;: &#x27;add_first_result_to_cart&#x27;, &#x27;value&#x27;: None, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 6, &#x27;action&#x27;: &#x27;open_cart&#x27;, &#x27;value&#x27;: None, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 7, &#x27;action&#x27;: &#x27;proceed_to_checkout&#x27;, &#x27;value&#x27;: None, &#x27;status&#x27;: &#x27;PASS&#x27;}, {&#x27;step&#x27;: 8, &#x27;action&#x27;: &#x27;verify_text&#x27;, &#x27;value&#x27;: &#x27;Checkout&#x27;, &#x27;status&#x27;: &#x27;PASS&#x27;}]</li></ul></td>
+        <td><span class="pill pass">PASSED</span></td>
+        <td>0.622s</td>
+        <td><details><summary>View details</summary><pre>No failure details.</pre></details></td></tr>
+        <tr><td>tests/test_regression.py::test_home_page_loads<ul></ul></td>
+        <td><span class="pill pass">PASSED</span></td>
+        <td>0.056s</td>
+        <td><details><summary>View details</summary><pre>No failure details.</pre></details></td></tr>
+        <tr><td>tests/test_regression.py::test_invalid_login_shows_error<ul></ul></td>
+        <td><span class="pill pass">PASSED</span></td>
+        <td>0.141s</td>
+        <td><details><summary>View details</summary><pre>No failure details.</pre></details></td></tr>
+        <tr><td>tests/test_regression.py::test_search_and_add_product_to_cart<ul></ul></td>
+        <td><span class="pill pass">PASSED</span></td>
+        <td>0.236s</td>
+        <td><details><summary>View details</summary><pre>No failure details.</pre></details></td></tr>
+        <tr><td>tests/test_regression.py::test_checkout_is_simulated<ul></ul></td>
+        <td><span class="pill pass">PASSED</span></td>
+        <td>0.432s</td>
+        <td><details><summary>View details</summary><pre>No failure details.</pre></details></td></tr></tbody></table>
+    <p>Local demo only. This is a Python-generated Extent-style report, not the Java ExtentReports SDK.</p>
+    </body></html>
